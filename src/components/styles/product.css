@@ -5,10 +5,18 @@
     background-color: white;
     display: inline-block;
     width: 250px;
-    height: 340px;
+    height: 350px;
+}
+
+.product:hover{
+    box-shadow: 1px 0 3px 5px rgb(10, 53, 73);
 }
 .product h3{
     color: rgb(10, 53, 73);
+}
+
+.product img{
+    width: 248px;
 }
 
 .price-button{
@@ -21,3 +29,22 @@
 .prices{
     margin-bottom: 5px;
 }
+
+.product .prices .total{
+    margin-right: 25px;
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(10, 53, 73);
+}
+.product .prices .unit{
+    color: rgb(175, 36, 36);
+}
+
+.product .parent{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 6px; 
+}
+
+
+

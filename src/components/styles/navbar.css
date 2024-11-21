@@ -6,16 +6,20 @@
     height: 60px;
     align-items: center;
 }
+.navbar-menu h1{
+    color: black;
+    font-weight: bolder;
+}
 
-a{
+.navbar-menu a{
     text-transform: uppercase;
     font-size: 18px;
-    color: rgb(0, 0, 0);
     letter-spacing: 1px;
     font-weight: bolder;
     text-decoration: none;
+    color:  rgb(23, 134, 185);
 }
 
 a:hover{
-    color: orange;
+    color: rgb(185, 155, 115);
 }
