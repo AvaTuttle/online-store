@@ -36,3 +36,7 @@
     text-align: center;
     margin-top: 20px;
 }
+
+.page{
+    min-height: calc(100vh - 124px);
+}

@@ -12,11 +12,11 @@ function About(){
     }
 
     return(
-        <div className="about">
+        <div className="about page">
             <h3>About Us</h3>
             <div className="box">
                 <h2>Ava Tuttle</h2>
-                {visibleEmail ? <h5>Ava.lenore.614@email.com</h5> : <label>Click to ssee my email</label>}
+                {visibleEmail ? <h5>Ava.lenore.614@email.com</h5> : <label>Click to see my email</label>}
                 <br/>
                 {
                     !visibleEmail

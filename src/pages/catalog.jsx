@@ -23,7 +23,7 @@ function Catalog(){
     }, []);
 
     return(
-        <div className="content">
+        <div className="content page">
             <div>
             <h1>this is the catalog</h1>
             </div>

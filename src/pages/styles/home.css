@@ -1,0 +1,25 @@
+
+.home{
+    background-color: rgb(185, 155, 115);
+}
+
+.card-container{
+    display: inline-block;
+    margin: auto;
+}
+
+.card-block{
+    margin: auto;
+    padding: 1px;
+}
+
+.card-item{
+    background-color: #dedede;
+    border: 2px solid rgb(10, 53, 73);
+    border-radius: 4px;
+    margin: 12px;
+}
+
+.card-item-text{
+    padding: 10px;
+}
