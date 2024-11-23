@@ -1,7 +1,7 @@
 var catalog = [
     {
         "title": "Strawberry",
-        "category": "fruit",
+        "category": "ruit",
         "price": 16.93,
         "image": "/img/strawberry.img",
         "_id": "0001"
@@ -86,9 +86,15 @@ var catalog = [
 ];
 
 
+var categories = ["fruit", "vegitables", "dairy", "bakery"]
+
 class DataService {
     getProducts(){
         return catalog;
+    }
+
+    getCategories(){
+        return categories;
     }
 }
 

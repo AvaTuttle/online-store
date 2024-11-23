@@ -6,6 +6,12 @@
     display: inline-block;
     width: 250px;
     height: 350px;
+    vertical-align: top;
+}
+
+.product img{
+    max-width: 248px;
+    max-height: 175px;
 }
 
 .product:hover{

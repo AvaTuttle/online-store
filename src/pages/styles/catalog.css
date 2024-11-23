@@ -7,3 +7,6 @@
     background-color: rgb(185, 155, 115);
 }
 
+.content .filters button{
+    margin-right: 6px;
+}
