@@ -3,7 +3,8 @@ import "./styles/quantityPicker.css";
 
 
 function QuantityPicker(){
-
+    const context = useContext(GlobalContext);
+    
     const [quantity, setQuantity] = useState(1);
     
     function increase(){

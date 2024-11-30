@@ -1,7 +1,10 @@
+import { useContext } from "react";
 import "./styles/navbar.css";
 import { Link } from "react-router-dom";
+import GlobalContext from "../context/globalContext";
 
 function Navbar(){
+    const user = useContext(GlobalContext).user;
     return (
         <div>
             <nav>
@@ -11,7 +14,7 @@ function Navbar(){
                     <Link to="/catalog">Catalog</Link>
                     <Link to="/about">About</Link>
                     <Link to="/cart">Cart</Link>
-                    <Link to="/admin">Administarion</Link>
+                    <Link to="/admin">Admin</Link>
                 </div>
             </nav>
         </div>

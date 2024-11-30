@@ -15,7 +15,7 @@
 }
 
 .product:hover{
-    box-shadow: 1px 0 3px 5px rgb(10, 53, 73);
+    box-shadow: 1px 0 3px 5px rgba(10, 53, 73, 0.37);
 }
 .product h3{
     color: rgb(10, 53, 73);

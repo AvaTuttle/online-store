@@ -10,9 +10,11 @@ import Cart from "./pages/cart.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import GlobalProvider from "./context/globalProvider.jsx";
 
 function App() {
   return (
+    <GlobalProvider>
     <BrowserRouter>
       <div className="App page">
         <Navbar />
@@ -29,6 +31,7 @@ function App() {
         <Footer />
       </div>
     </BrowserRouter>
+    </GlobalProvider>
   );
 }
 
