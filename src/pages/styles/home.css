@@ -1,6 +1,6 @@
 
 .home{
-    background-color: rgb(185, 155, 115);
+    background-color: rgb(243, 223, 198);
 }
 
 .card-container{
@@ -22,4 +22,13 @@
 
 .card-item-text{
     padding: 10px;
+    background-color:   rgb(245, 180, 95);
+    /*background-color:  rgb(243, 223, 198);*/
+}
+
+.home .card-container .btn{
+    text-decoration: none;
+    border: 1px solid black;
+    background-color:    rgb(245, 180, 95);
+    margin-bottom: 15px;
 }

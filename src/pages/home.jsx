@@ -40,7 +40,7 @@ function Home(){
                     </div>
                 </section>
                 <div>
-                <Link to="/catalog" className="btn btn-primary">Check Out Our Procudts Here!</Link>
+                <Link to="/catalog" className="btn">Check Out Our Products Here!</Link>
                 </div>
             </div>
         </div>

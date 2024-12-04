@@ -1,10 +1,49 @@
 .cart{
     padding-top: 20px;
-    background-color: rgb(185, 155, 115);
+    background-color: rgb(243, 223, 198);
 }
 
 .cart h1{
     text-align: center;
     color:  rgb(10, 53, 73);
+}
+
+.cart .list .prod-cart{
+
+}
+
+.cart .list .prod-cart .prod-container{
+    background-color:  rgb(245, 180, 95);
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.cart .list .prod-cart .prod-container img{
+    max-width: 250px;
+    min-width: 250px;
+    max-height: 150px; 
+    min-height: 150px;
+    background-color: rgb(245, 180, 95);
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.cart .list .prod-cart .prod-container .prod-text{
+    margin-top: 75px;
+}
+
+.cart .list .prod-cart .prod-container .btn{
+    max-height: 50px;
+    color: rgb(10, 53, 73);
+    border: 1px solid black;
+    background-color:  rgb(243, 223, 198);
+}
+
+.cart .list .prod-cart .prod-container button:hover{
+    color:  rgb(23, 134, 185);
 }
 

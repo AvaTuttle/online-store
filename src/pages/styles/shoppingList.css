@@ -1,5 +1,6 @@
 .list{
     padding: 30px 50px;
+    background-color:  rgb(243, 223, 198);
 }
 
 .list h1{
@@ -12,7 +13,7 @@
     border: 1px solid  rgb(10, 53, 73);
     border-radius: 4px;
     max-width: 350px;
-    background-color: white;
+    background-color: rgb(216, 154, 73);
     margin-left: auto;
     margin-right: auto;
 }
@@ -37,7 +38,7 @@
     display: block;
     border: 1px solid black;
     border-radius: 4px;
-    background-color:  rgb(185, 155, 115);
+    background-color:  rgb(216, 154, 73);
     padding: 6px;
     margin-bottom: 10px;
     width: 420px;
