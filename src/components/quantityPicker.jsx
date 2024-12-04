@@ -1,9 +1,9 @@
 import { useState } from "react";
 import "./styles/quantityPicker.css";
+import { useContext } from "react";
 
 
 function QuantityPicker(){
-    const context = useContext(GlobalContext);
     
     const [quantity, setQuantity] = useState(1);
     

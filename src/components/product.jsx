@@ -7,7 +7,7 @@ function Product(props) {
     const context = useContext(GlobalContext);
     return(
         <div className="product">
-            <span>ID: {props.data._id}</span>
+            <span className="id">ID: {props.data._id}</span>
             <img src={props.data.image} alt=""/>
             <h3>{props.data.title}</h3>
                 <div className="prices">

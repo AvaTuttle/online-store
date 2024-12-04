@@ -1,7 +1,7 @@
 var catalog = [
     {
         "title": "Strawberry",
-        "category": "ruit",
+        "category": "fruit",
         "price": 16.93,
         "image": "/img/strawberry.img",
         "_id": "0001"
@@ -86,7 +86,7 @@ var catalog = [
 ];
 
 
-var categories = ["fruit", "vegitables", "dairy", "bakery"]
+var categories = ["fruit", "vegitable", "dairy", "bakery"]
 
 class DataService {
     getProducts(){
