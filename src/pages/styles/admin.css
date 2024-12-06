@@ -40,3 +40,35 @@
 .page{
     min-height: calc(100vh - 124px);
 }
+
+.admin .coupon-item{
+    list-style: none;
+    text-align: center;
+}
+
+.admin .coupon-list li{
+    border: 1px solid  rgb(10, 53, 73);
+    border-radius: 4px;
+    padding: 5px 20px;
+    margin-bottom: 6px;
+    margin-right: 50px;
+
+}
+.admin .product-item{
+    list-style: none;
+    
+}
+.admin .product-item .img{
+    max-width: 50px;
+
+}
+
+.admin .product-list li{
+    border: 1px solid  rgb(10, 53, 73);
+    border-radius: 4px;
+    padding: 5px 20px;
+    margin-bottom: 6px;
+    margin-right: 50px;
+
+}
+

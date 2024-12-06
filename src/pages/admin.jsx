@@ -1,12 +1,14 @@
+import { Link, Links } from "react-router-dom";
 import "./styles/admin.css"; 
 import {useState} from "react";
 
 function Admin(){
-
+    const [allCoupons, setAllCoupons] = useState([]);
     const [coupon, setCoupon] = useState({
         code:"",
         discount:""
     });
+    const [allProducts, setAllProducts] = useState([]);
     const [product, setProduct] = useState({
         title: "",
         category: "",
@@ -35,7 +37,11 @@ function Admin(){
     
     function saveCoupon(){
         console.log(coupon);
+        var copy = [...allCoupons];
+        copy.push(coupon);
+        setAllCoupons(copy);
     }
+
 
     
     function handleProductInput(e){
@@ -49,6 +55,9 @@ function Admin(){
     
     function saveProduct(){
         console.log(product);
+        var copy = [...allProducts];
+        copy.push(product);
+        setAllProducts(copy);
     }
     
 
@@ -63,8 +72,8 @@ function Admin(){
                         <input type="text" className="form-control" onBlur={handleProductInput} name="title" />
                     </div>                   
                     <div>
-                        <label className="form-label">Catergory</label>
-                        <input type="text" className="form-control" onBlur={handleProductInput} name="catergory" />
+                        <label className="form-label">Category</label>
+                        <input type="text" className="form-control" onBlur={handleProductInput} name="category" />
                     </div>                   
                     <div>
                         <label className="form-label">Image</label>
@@ -76,7 +85,13 @@ function Admin(){
                     </div>
                     <div className="mb-5 btn-container">
                         <button className="button btn-outline-dark" onClick={saveProduct}>Save</button>
-                    </div>                 
+                    </div> 
+                    <ul className="product-list">
+                        {allProducts.map(prod =>
+                            <li className="product-item">
+                                {prod.title} - <img className="img" src={prod.image} alt="" /> - ${parseFloat(prod.price).toFixed(2)}
+                            </li>)}
+                    </ul>                
                 </div>
 
                 <div className="coupons form">
@@ -92,6 +107,9 @@ function Admin(){
                     <div className="mb-5 btn-container">
                         <button className="button btn-outline-dark" onClick={saveCoupon}>Save Coupon</button>
                     </div>
+                    <ul className="coupon-list">
+                        {allCoupons.map(cp => <li className="coupon-item">{cp.code} - {cp.discount}%</li>)}
+                    </ul>
                 </div>
             </div>
         </div>
